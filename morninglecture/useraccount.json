@@ -1,0 +1,17 @@
+[
+  {
+    "user_ID": 1,
+    "account_Number": 1,
+    "balance": 300
+  },
+  {
+    "user_ID": 2,
+    "account_Number": 2,
+    "balance": 2100
+  },
+  {
+    "user_ID": 3,
+    "account_Number": 3,
+    "balance": 2100
+  }
+]

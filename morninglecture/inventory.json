@@ -1,0 +1,26 @@
+[
+  {
+    "product_Name": "Pizza",
+    "available_Quantity": 485,
+    "price": 300,
+    "state": "in-Stock",
+    "stock_Level": "not_Availale",
+    "initial-stock": 700
+  },
+  {
+    "product_Name": "Burger",
+    "available_Quantity": 494,
+    "price": 300,
+    "state": "in-Stock",
+    "stock_Level": "not_Availale",
+    "initial-stock": 700
+  },
+  {
+    "product_Name": "Pie",
+    "available_Quantity": 497,
+    "price": 300,
+    "state": "in-Stock",
+    "stock_Level": "not_Availale",
+    "initial-stock": 700
+  }
+]
