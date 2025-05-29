@@ -1,0 +1,37 @@
+[
+  {
+    "user_id": 1,
+    "account_Number": 1,
+    "pincode": 1,
+    "balance": 300,
+    "state": "frozen"
+  },
+  {
+    "user_id": 2,
+    "account_Number": 2,
+    "pincode": 2,
+    "balance": 2100,
+    "state": "frozen"
+  },
+  {
+    "user_id": 3,
+    "account_Number": 3,
+    "pincode": 2,
+    "balance": 2100,
+    "state": "active"
+  },
+  {
+    "user_id": 1,
+    "account_Number": 1,
+    "pincode": 1,
+    "balance": 300,
+    "state": "frozen"
+  },
+  {
+    "user_id": 1,
+    "account_Number": 846304244205028674584166131646,
+    "pincode": "12",
+    "balance": 0,
+    "state": "active"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "product_Name": "pie",
+    "available_Quantity": 497,
+    "price": 300,
+    "state": "in-Stock",
+    "stock_level": "not_Availale",
+    "initial_stock": 700
+  },
+  {
+    "product_Name": "ice",
+    "available_Quantity": 700,
+    "price": 300,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 700
+  },
+  {
+    "product_Name": "picco",
+    "available_Quantity": 30,
+    "price": 500,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 30
+  },
+  {
+    "product_Name": "damn",
+    "available_Quantity": 7,
+    "price": 800,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 7
+  },
+  {
+    "product_Name": "royco",
+    "available_Quantity": 10,
+    "price": 50,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 10
+  },
+  {
+    "product_Name": "dude",
+    "available_Quantity": 40,
+    "price": 200,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 40
+  },
+  {
+    "product_Name": "dat",
+    "available_Quantity": 23,
+    "price": 200,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 23
+  },
+  {
+    "product_Name": "pico",
+    "available_Quantity": 20,
+    "price": 200,
+    "state": "instock",
+    "stock_level": 100.0,
+    "initial_stock": 20
+  }
+]
