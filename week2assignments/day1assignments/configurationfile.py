@@ -1,45 +1,53 @@
+import json
+import os
+
+#-----------------Constants----------------------
+STUDENTS_FILE="student.json"
+LECTURES_FILE="lectures.json"
+COURSES_FILE="courses.json"
+
 
 #-----------------------loading user------------------
 def load_enity(user_type):
     try:
-        if type =="student":
+        if user_type =="student":
             students=load_students()
             return students
         elif type=="lecturer":
             lecturers=load_lectures()
             return lecturers
-        elif type=="course":
+        elif user_type=="course":
             courses=load_courses()
-            return lecturers
+            return courses
         else:
-            raise ValueError("inalid input")
+            raise ValueError("invalid input")
     except ValueError as e:
         print(e)
-        return
+        
 
 def load_students():
-    with open("student.json", "r") as students:
-        students=students.read()
-    return students
-
+    if os.path.exists(STUDENTS_FILE):
+        with open(STUDENTS_FILE, "r") as students:
+            return json.load(students)
+    
 def load_lectures():
-    with open("lectures.json", "r") as lecturers:
-        lecturers=lecturers.read()
-    return lecturers
-
+    if os.path.exists(LECTURES_FILE):
+        with open(LECTURES_FILE, "r") as lecturers:
+            return json.load(lecturers)
+    
 def load_courses():
-    with open("courses.json", "r") as courses:
-        courses=courses.read()
-    return courses
+    if os.path.exists(COURSES_FILE):
+        with open(COURSES_FILE, "r") as courses:
+            return json.load(courses)
 
 
 #------------------------persisting enity to file-------------------
-def save(type):
+def save(type,file):
     try:
         if type=="student":
-            save_student()
+            save_student(file)
         elif type=="lecturer":
-            save_lecturer
+            save_lecturer(file)
         else:
             raise ValueError("invalid input!")
     except ValueError as e:
@@ -47,13 +55,13 @@ def save(type):
 
 def save_student(students_file):
     with open("student.json","w") as students:
-        students.dump(students_file, students)
+        json.dump(students_file, students, indent=1)
         print("saved successfully!")
         return
                 
 def save_lecturer(lecurer_file):
     with open("lecurer.json","w") as lecturers:
-        lecturers.dump(lecurer_file, lecturers)
+        json.dump(lecurer_file, lecturers,indent=1)
         print("saved successfully!")
         return
 

@@ -4,6 +4,7 @@ import configurationfile
 #--------------------Registeration helper functions---------------------
 
 def generateid(entitytype):#demonstrating polymormophism with abstraction
+    print(entitytype)
     try:
         if entitytype=="student":
             studentid=generate_studentid()
@@ -23,7 +24,8 @@ def generateid(entitytype):#demonstrating polymormophism with abstraction
 
 def generate_studentid():
     students=configurationfile.load_enity("student")
-    studentid=max([student.get("studentid") for student in students],default=0)
+    print(students)
+    studentid=max([int(student["id"] )for student in students],default=0)
     return studentid
 
 def generate_lecturerid():
