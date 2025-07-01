@@ -3,37 +3,46 @@ import configurationfile
 
 class Student:
     
-    def __init__(self, studentid="", courseid="", student_name="", email="", contact="", course_name="" ):
+    def __init__(self, studentid="", courseid="", student_name="", email="", contact="", course_name="", password="",account_id=""):
         self.studentid=studentid
         self.courseid=courseid 
+        self.account_id=account_id
         self.name=student_name
         self.email=email
         self.contact=contact
         self.course_name=course_name
-    
-    def login(email, password):
+        self.password=password
         
-        students_list=configurationfile.load_user("student")
-        student=next((student for student in students_list if student.get("email")==email and student.get("password"==password)),None)
+    
+    #TESTED
+    #student= Student(email="hk",password="3")
+    #student.login()
+    def login(self):
+        students_list=functionbase.load_entity("student")
+        student=next((student for student in students_list if student.get("email")==self.email and student.get("password")==self.password),None)
         try:
             if not student:
+                self.password=""
+                self.email=""
                 raise ValueError("invalid Username or pssword")
             print("login succesful!")
             return
         except ValueError as e:
             print(e)
             return
-
-
+        
     def logout(self):
-        print("H")
+        print("logged out")
         return
     
+    #TESTED
+    #student= Student(email="hk",password="3")
+    #student.register()
     def register(self ):
         
         #student_name,email, contact, course_name
         studentid=functionbase.generateid(entitytype="student")
-        courseid=functionbase.fetch_courseid(self.course_name)
+        courseid=functionbase.generateid(entitytype="course")
         
         # student=Student(studentid,courseid,student_name,email,contact)
         self.studentid=studentid
@@ -45,22 +54,21 @@ class Student:
         students=configurationfile.load_enity("student")
         students.append(student)
         configurationfile.save("student",students)
-        
+        print("Registration successfull!")
         return
     
     
     def check_results(self):
-        print("H")
+        print("loding results")
         return
     
     def pay_tuition(self):
-        print("H")
+        print("Tuition paid")
         return
     
     def send_Complaint_form(self):
-        print("H")
+        print("sent")
         return
     
-
-student= Student(student_name="bk",email="bk",contact=13)
-student.register()
+student= Student(email="hk",password="3")
+student.login()

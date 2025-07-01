@@ -4,27 +4,31 @@
   "courseid": 1,
   "name": "fk",
   "email": "fk",
-  "cotact": "01"
+  "cotact": "01",
+  "password":"1"
  },
  {
   "id": 2,
   "courseid": 2,
   "name": "gk",
   "email": "gk",
-  "cotact": "02"
+  "cotact": "02",
+  "password":"2"
  },
  {
   "id": 3,
-  "courseid": 3,
+  "courseid": 1,
   "name": "hk",
   "email": "hk",
-  "cotact": "03"
+  "cotact": "03",
+  "password":"3"
  },
  {
-  "id": 3,
-  "courseid": null,
+  "id": 4,
+  "courseid": 2,
   "name": "bk",
   "email": "bk",
-  "cotact": 13
+  "cotact": 13,
+  "password":"4"
  }
 ]
